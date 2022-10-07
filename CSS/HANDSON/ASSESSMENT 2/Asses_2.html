@@ -20,6 +20,7 @@
             font-size: 40px;
         }
     </style>
+
 </head>
 
 <body>
@@ -45,29 +46,31 @@
 
 
         <div id="form">
-            <div id="form_data">
+            <div id="form_data"> 
+                <form action="./form_submit.html" >
                 <h1>PLEASE REGISTER HERE</h1>
                 <hr><br><br>
                 <lable id="name"><b>First name:</b></lable><br>
-                <input type="text" placeholder="Enter your first name" id="name"><br><br>
+                <input type="text" placeholder=" first name" id="first name" name="first name"><br><br>
                 <lable id="last_name"><b>Last name:</b></lable><br>
-                <input type="text" placeholder="Enter your lastt name" id=" last_name"><br><br>
+                <input type="text" placeholder="last name" id=" last_name" name="last name"><br><br>
                 <lable id="age"><b>Age:</b></lable><br>
-                <input type="number" placeholder="Enter your age" id=" age"><br><br>
+                <input type="number" placeholder="Enter your age" id=" age" name="age"><br><br>
                 <lable id="email"><b>Email:</b></lable><br>
-                <input type="text" placeholder="Enter your email" id=" email"><br><br>
+                <input type="email" placeholder="Enter your email" id=" email" name="email"><br><br>
                 <lable id="dob"><b>Date of birth:</b></lable><br>
-                <input type="date" placeholder="Enter your DOB" id=" dob"><br><br>
+                <input type="date" placeholder="Enter your DOB" id=" dob" name="dob"><br><br>
                 <label for="1_checkbox">Are you more than one person ?</label><br>
                 <input type="checkbox" id="1_checkbox" name="1_checkbox" value="more than one person"><br>
-
                 <lable>Do you havr cough or cold</lable><br>
                 <input type="checkbox" id="2_checkbox" name="2_checkbox" value="cough or cold"><br><br>
                 <label id="submit">Click here</label><br>
                 <input type="submit" id="submit" value="submit"><br><br>
                 <label id="reset">Reset</label><br>
                 <input type="reset" id="reset" value="reset"><br><br>
+         
             </div>
+        </form>
         </div>
 
     </div>
