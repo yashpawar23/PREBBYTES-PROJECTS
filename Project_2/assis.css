@@ -1,0 +1,89 @@
+#task_color {
+    color: #00A5EC;
+}
+
+body {
+    margin: 0;
+}
+
+#my_sheet {
+    padding-left: 139px;
+}
+
+.line {
+    text-decoration: line-through;
+    text-align: left;
+    font: normal normal normal 18px/21px Inter;
+    letter-spacing: 0px;
+    color: #C2C2C2;
+    opacity: 1;
+}
+
+input {
+    width: 18px;
+    height: 18px;
+}
+
+
+#font {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: aqua;
+
+}
+
+#new_task {
+    font-size: 22px;
+    color: #424242;
+   margin: 20px;
+
+
+}
+
+.box {
+    border: 1px solid;
+    width: 352px;
+    height: 360px;
+    border-radius: 10px;
+
+
+}
+
+p {
+    font-size: 20px;
+    color: #00A5EC;
+    padding-left: 30px;
+
+}
+
+label {
+    font-size: 18px;
+
+}
+
+#all_box {
+    display: flex;
+    flex-wrap: wrap;
+   gap: 16px 15px;
+
+
+}
+.box{
+    width:33%
+}
+
+
+
+#shadow {
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding:139px
+
+
+}
+.add-task-wrapper{
+    display: flex;
+    align-items: center;
+
+}
