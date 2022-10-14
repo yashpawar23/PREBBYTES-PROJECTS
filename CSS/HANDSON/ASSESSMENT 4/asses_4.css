@@ -1,7 +1,8 @@
 .first_heading{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     text-align: center;
     text-decoration: underline;
+    background-image: linear-gradient(to right, red,green, yellow);
 }
 
 .list{ 
@@ -12,12 +13,12 @@
 }
 
 .list1{
-    border: 5px solid red;
+    border: 5px solid black;
     border-width: 5px;
     border-radius: 10px;
     text-align: center;
     grid-column: 2 ;
-    background-color: lightseagreen;
+    background-color: lightpink;
 }
 .box{
     border: 2px solid black;
@@ -26,7 +27,8 @@
     grid-template-columns: 1fr 1fr 1fr  ;
     padding: 0px;
     border-radius: 20px;
-    background-color: lightsteelblue;
+   
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
    
 }
 .sub_box_1{
@@ -53,15 +55,17 @@
     border: 5px solid black;
     width: max-content;
     border-radius: 10px;
+    padding: 10px;
+    background-color:lightpink;
     
 }
 .second_heading{
-    background-color: yellowgreen;
+    background-image: linear-gradient(to right, red, yellow);
     text-align: center;
 }
 .box1{
-    border: 2px solid green;
-   
+    border: 2px solid black;
+    background: radial-gradient(circle,  rgba(255,0,0,0), rgba(255,0,0,1));
     text-align: center;
     padding: 50px;
     display: grid;
@@ -75,7 +79,7 @@
 .sub_box1{
     border: 5px solid black;
   border-radius: 10px;
-  background-color: aqua;
+  background-color: lightpink;
   font-size: 20px;
   font-weight: bold;
 
@@ -91,7 +95,7 @@
 .grid1{
     grid-column-start: 1;
     grid-column-end: 14;
-    background-color: red;
+    background-color: rgba(198, 93, 255, 0.842);
     text-align: center;
     font-size: 25px;
     font-weight: bold;
@@ -101,7 +105,7 @@
 .grid2{
     grid-column-start: 1;
     grid-column-end: 5;
-    background-color:greenyellow;
+    background-color:rgba(255, 241, 47, 0.679);
     text-align: center;
     font-size: 25px;
     font-weight: bold;
@@ -109,7 +113,7 @@
 .grid3{
     grid-column-start: 5 ;
     grid-column-end:  9;
-    background-color:blue;
+    background-color:rgba(0, 255, 234, 0.534);
     text-align: center;
     font-size: 25px;
     font-weight: bold;
@@ -117,7 +121,7 @@
 .grid4{
     grid-column-start: 9;
     grid-column-end: 13;
-    background-color:purple;
+    background-color:rgba(150, 5, 150, 0.742);
     text-align: center;
     font-size: 25px;
     font-weight: bold;
@@ -125,7 +129,7 @@
 .grid5{
     grid-column-start: 1;
     grid-column-end: 13;
-    background-color:orange;
+    background-color:rgba(170, 121, 28, 0.895);
     text-align: center;
     font-size: 25px;
     font-weight: bold;
