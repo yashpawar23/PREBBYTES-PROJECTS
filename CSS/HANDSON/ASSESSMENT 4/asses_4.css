@@ -1,0 +1,157 @@
+.first_heading{
+    background-color: blueviolet;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.list{ 
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+   
+
+}
+
+.list1{
+    border: 5px solid red;
+    border-width: 5px;
+    border-radius: 10px;
+    text-align: center;
+    grid-column: 2 ;
+    background-color: lightseagreen;
+}
+.box{
+    border: 2px solid black;
+    display: grid;
+    grid-gap: 0px 20px;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    padding: 0px;
+    border-radius: 20px;
+    background-color: lightsteelblue;
+   
+}
+.sub_box_1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.sub_box_2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.sub_box_3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.sub_box_4{
+    grid-column-start: 2;
+    grid-column-end:3;
+}
+
+
+
+
+.sub_box{
+    border: 5px solid black;
+    width: max-content;
+    border-radius: 10px;
+    
+}
+.second_heading{
+    background-color: yellowgreen;
+    text-align: center;
+}
+.box1{
+    border: 2px solid green;
+   
+    text-align: center;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0 40px;
+    
+   background-color: dimgray;
+    margin-bottom: 20px;
+    
+}
+.sub_box1{
+    border: 5px solid black;
+  border-radius: 10px;
+  background-color: aqua;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.grid-container{
+   display: grid;
+   grid-template-columns: repeat(13,1fr);
+   grid-gap: 18px 16px;
+   
+
+
+}
+.grid1{
+    grid-column-start: 1;
+    grid-column-end: 14;
+    background-color: red;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.grid2{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color:greenyellow;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.grid3{
+    grid-column-start: 5 ;
+    grid-column-end:  9;
+    background-color:blue;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.grid4{
+    grid-column-start: 9;
+    grid-column-end: 13;
+    background-color:purple;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.grid5{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    background-color:orange;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.grid6{
+    grid-column-start: 13 ;
+    background-color:black;
+    color: white;
+    text-align: center;
+    grid-row:2 / span 2;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+   
+}
+.grid7{
+    grid-column-start: 1;
+    grid-column-end: 14;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+
+
+  
