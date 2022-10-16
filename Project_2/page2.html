@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,83 +12,84 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
-    <div class="blur">
-        <div class="my_sheet">
 
-            <h1>Tasks <span id="task_color">List</span> </h1>
-    
-        </div>
-        <div id="shadow">
-            <div class="add-task-wrapper">
-                   <i class="fa-solid fa-circle-plus  font"></i>
-                <div id="new_task"> Add New Task</div>
+<body>
+
+    <div class="background-blur">
+        <div>
+            <div class="page-heading">
+                <h1>Tasks <span class="heading-2nd-word-color">List</span> </h1>
             </div>
-    
-            <div class="all_box">
-                <div class="box" >
-                    <h3>Trip to Paris</h3>
-                    <hr>
-                    <input type="checkbox" class="mark_check"id="Visit Church">
-                    <label for="Visit Church" class="line">Visit Church</label><br><br>
-                    <input type="checkbox"class="no_mark" id="Shoppings">
-                    <label for="Shopping" class="line2">Shopping</label>
-    
-                   
+            <div>
+                <div class="new-task-icon">
+                    <a href="./page2.html"><i class="fa-solid fa-circle-plus  icon"></i></a>
+                    <div class="new_task-text"> Add New Task</div>
                 </div>
-                <div class="box" >
-                    <h3>My To Do List</h3>
-                    <hr>
-                    <input type="checkbox"class="mark_check" id="Visit Supermarket">
-                    <label for="Visit Supermarket" class="line1">Visit Supermarket</label><br><br>
-                    <input type="checkbox"class="no_mark" id="Buy Vegetables">
-                    <label for="Buy Vegetables" class="line2">Buy Vegetables</label>
+
+                <div class="main-page-cards">
+                    <div class=" cards card1">
+                        <a href="./page3.html">
+                            <h3 class="cards-heading">Trip to Paris</h3>
+                        </a>
+                        <hr>
+                        <input type="checkbox" class="checkbox-lable1" id="Visit Church">
+                        <label for="Visit Church" class="input-lable">Visit Church</label><br><br>
+                        <input type="checkbox" class="checkbox-lable1" id="Shoppings">
+                        <label for="Shopping" class="input-lable2">Shopping</label>
+
+
+                    </div>
+                    <div class=" cards card2">
+                        <h3 class="cards-heading">My To Do List</h3>
+                        <hr>
+                        <input type="checkbox" class="checkbox-lable1" id="Visit Supermarket">
+                        <label for="Visit Supermarket" class="input-lable">Visit Supermarket</label><br><br>
+                        <input type="checkbox" class="checkbox-lable1" id="Buy Vegetables">
+                        <label for="Buy Vegetables" class="input-lable2">Buy Vegetables</label>
+                    </div>
+                    <div class=" cards card3">
+                        <h3 class="cards-heading">Movies I will Watch</h3>
+                        <hr>
+                        <input type="checkbox" class="checkbox-lable1" id="Stranger_Things 4">
+                        <label for="Stranger Things 4" class="input-lable">Stranger Things 4</label><br><br>
+                        <input type="checkbox" class="checkbox-lable1" id="Avengers Endgame">
+                        <label for="Avengers Endgame" class="input-lable2">Avengers Endgame</label>
+                    </div>
+                    <div class=" cards card4">
+                        <h3 class="cards-heading">Daily Morning Routine for...</h3>
+                        <hr>
+                        <input type="checkbox" class="checkbox-lable1" id="Wake up at 6 AM">
+                        <label for="Wake up at 6 AM" class="input-lable">Wake up at 6 AM</label><br><br>
+                        <input type="checkbox" class="checkbox-lable1" id="Sleep at 10 PM">
+                        <label for="Sleep at 10 PM" class="input-lable2">Sleep at 10 PM</label>
+                    </div>
+                    <div class=" cards card5">
+                        <h3 class="cards-heading">Books to Read<h3>
+                                <hr>
+                                <input type="checkbox" class="checkbox-lable1" id="visit  church">
+                                <label for="Design of Everyday" class="input-lable">Design of Everyday</label><br><br>
+                                <input type="checkbox" class="checkbox-lable1" id="Alchemist">
+                                <label for="Alchemist" class="input-lable2">Alchemist</label>
+                    </div>
                 </div>
-                <div class="box" >
-                    <h3>Movies I will Watch</h3>
-                    <hr>
-                    <input type="checkbox" class="mark_check"id="Stranger_Things 4">
-                    <label for="Stranger Things 4" class="line1">Stranger Things 4</label><br><br>
-                    <input type="checkbox" class="no_mark"id="Avengers Endgame">
-                    <label for="Avengers Endgame" class="line2">Avengers Endgame</label>
-                </div>
-                <div class="box" >
-                    <h3>Daily Morning Routine for...</h3>
-                    <hr>
-                    <input type="checkbox"class="mark_check" id="Wake up at 6 AM">
-                    <label for="Wake up at 6 AM" class="line1">Wake up at 6 AM</label><br><br>
-                    <input type="checkbox" class="no_mark"id="Sleep at 10 PM">
-                    <label for="Sleep at 10 PM" class="line2">Sleep at 10 PM</label>
-                </div>
-                <div class="box">
-                    <h3>Books to Read<h3>
-                    <hr>
-                    <input type="checkbox"class="mark_check" id="visit  church">
-                    <label for="Design of Everyday" class="line1">Design of Everyday</label><br><br>
-                    <input type="checkbox" class="no_mark"id="Alchemist">
-                    <label for="Alchemist" class="line2">Alchemist</label>
-                </div>
-    
-    value="Add task"
-    
             </div>
         </div>
+        </div>
+
 
         <div class="page_2">
             <div>
-                <h2 >Add New Task</h2>
+                <h2 class="main-hading">Add New Task<a href="./Assis_2.html"> <i class="fa-solid fa-xmark xmark-icon"></i></a></h2>
                 <hr>
-                <input type="text"  class="Learn"   placeholder="Learn C++"><br><br>
-                <input type="button" class="button"  value="Add task"   class="fa-solid fa-circle-plus">
-                
+                <input type="text" class="text-area" placeholder="Learn C++"><br><br>
+                <button class="task-button"> <span> <i class="fa-duotone fa-plus task-button-icon"></i></span>Add Task</button>
+
             </div>
         </div>
-    
-    
-    
-    </body>
-    
-    </html>
+
+
+
+
 
 
         
@@ -95,31 +97,42 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
 </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+
 </html>
