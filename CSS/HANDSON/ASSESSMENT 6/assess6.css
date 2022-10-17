@@ -67,6 +67,40 @@ body{
     width:200px;
     border-radius: 20px;   
 }
+
+.top-left1{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 10px;
+    color: white;
+}
+
+.top-left2{
+    position: absolute; 
+    bottom: 150px;
+    left:16px ;
+    font-size: 10px;
+    color: white;
+}
+
+.top-left3{
+    position: absolute; 
+    bottom: 150px;
+    left:16px ;
+    font-size: 10px;
+    color: white;
+
+}
+
+.top-left4{
+    position: absolute; 
+    top: 8px;
+    right:16px ;
+    font-size: 10px;
+    color: white;
+}
+
 .first-col-image-section ,.second-col-image-section, img:hover{
     transform: translateY(-10px);
     
@@ -94,6 +128,37 @@ body{
     .grid-img:nth-child(2){
         margin-top: 35px;
     }
+    .top-left1{
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-size: 10px;
+        color: white;
+    }
+    .top-left2{
+        position: absolute; 
+        bottom: 150px;
+        left:16px ;
+        font-size: 10px;
+        color: white;
+    }
+    .top-left3{
+        position: absolute; 
+        bottom: 150px;
+        left:16px ;
+        font-size: 10px;
+        color: white;
+    
+    }
+    
+    .top-left4{
+        position: absolute; 
+        top: 8px;
+        right:16px ;
+        font-size: 10px;
+        color: white;
+    }
+    
 }
 
 
@@ -105,6 +170,37 @@ body{
     body{
         padding: 0 90px;
     }
+    .top-left1{
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-size: 10px;
+        color: white;
+    }
+    .top-left2{
+        position: absolute; 
+        bottom: 150px;
+        left:16px ;
+        font-size: 10px;
+        color: white;
+    }
+    .top-left3{
+        position: absolute; 
+        bottom: 150px;
+        left:16px ;
+        font-size: 10px;
+        color: white;
+    
+    }
+    
+    .top-left4{
+        position: absolute; 
+        top: 8px;
+        right:16px ;
+        font-size: 10px;
+        color: white;
+    }
+    
     
     
 }
@@ -117,6 +213,37 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
+    .top-left1{
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-size: 10px;
+        color: white;
+    }
+    .top-left2{
+        position: absolute; 
+        bottom: 150px;
+        left:16px ;
+        font-size: 10px;
+        color: white;
+    }
+    .top-left3{
+        position: absolute; 
+        bottom: 150px;
+        left:16px ;
+        font-size: 10px;
+        color: white;
+    
+    }
+    
+    .top-left4{
+        position: absolute; 
+        top: 8px;
+        right:16px ;
+        font-size: 10px;
+        color: white;
+    }
+    
 }
 
 
