@@ -102,7 +102,7 @@ body{
 }
 
 .first-col-image-section ,.second-col-image-section, img:hover{
-    transform: translateY(-10px);
+    transform: translateY(-2px);
     
 }
 
