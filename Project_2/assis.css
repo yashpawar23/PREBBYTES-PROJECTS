@@ -1,5 +1,6 @@
 body {
     background-color: #F7F7F7;
+    position: relative;
 }
 
 
@@ -115,6 +116,16 @@ body {
     color: white;
 }
 
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .main-page-cards{display: block;
+
+    }
+    .cards{
+        margin-bottom: 40px;
+        width: 100%;
+    }
+}
+
 
 
 /* PAGE-2 CSS */
@@ -142,7 +153,8 @@ background-color: #F7F7F7;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
+    position:absolute;
+  
     bottom: 50;
     bottom: 50vh;
     background-color: #FFFFFF;

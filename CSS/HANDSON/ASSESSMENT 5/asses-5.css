@@ -1,0 +1,79 @@
+body{
+    background-color:rgb(197, 95, 99);
+}
+
+.main-heading{
+    text-align: center;
+    font-weight: bold;
+}
+
+.first-row{
+    display: flex;
+    gap: 100px 100px;
+    justify-content: center;
+}
+
+
+.skew-row{
+    width: 150px;
+    height: 150px;
+    background-color: beige;
+    margin-bottom: 50px;
+}
+
+.next-page{
+    font-size: 40px;
+   display: flex;justify-content: center;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.row1{
+    animation-name:animation-first-row;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation-first-row {
+
+    0%{
+        transform: skewX(15deg);
+    }
+    25%{
+        transform: skewX(-15deg);
+    }
+    50%{
+        transform: skewX(15deg);
+    }
+    75%{
+        transform: skewX(-15deg);
+    }
+    100%{
+        transform: skewX(15deg);
+    }
+}
+
+.row2{
+    animation-name:animation-second-row;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation-second-row {
+
+    0%{
+        transform: skewY(15deg);
+    }
+    25%{
+        transform: skewY(-15deg);
+    }
+    50%{
+        transform: skewY(15deg);
+    }
+    75%{
+        transform: skewY(-15deg);
+    }
+    100%{
+        transform: skewY(15deg);
+    }
+}
