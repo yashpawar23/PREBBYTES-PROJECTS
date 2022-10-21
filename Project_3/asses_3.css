@@ -16,6 +16,7 @@ body {
     box-shadow: 0 20px 30px #7B7B7B29;
     height: 60px;
     background-color: white;
+    margin: 0;
 }
 
 .new-task-icon{
@@ -41,7 +42,6 @@ body {
 .new_task-text{
     margin-left: 10px;
     font-size: 25px;
-    
 }
 
 .main-page-cards{
@@ -61,6 +61,7 @@ body {
     background-color: #FFFFFF;
     border-color:#EDEDED ;
     box-shadow:0 0 10px ;
+  
 }
 .card1{
   grid-column-start: 1;
@@ -76,8 +77,7 @@ body {
 
 .card4{
     grid-column-start: 1;
-  
-}
+  }
 
 .card5{
     grid-column-start: 2;
@@ -185,7 +185,7 @@ background-color: #F7F7F7;
 .task-button {
     margin-bottom: 20px;
     padding-left: 20px;
-    width: 35%;
+    width: 40%;
     background-color: #00A5EC;
     margin-left: auto;
     color: white;
@@ -196,7 +196,7 @@ background-color: #F7F7F7;
 }
 
 .task-button-icon{
-    padding-right: 10px;
+    padding-right: 20px;
     font-size: 30px;
     color: white;
     background-color: #00A5EC;
@@ -273,78 +273,4 @@ background-color: #F7F7F7;
 
 }
 
-
-@media screen and (min-width: 320px) and (max-width:480px) {
-    .main-page-cards{
-        grid-template-columns: 1fr;
-        margin: 50px 0 0;
-        grid-gap: 10px;
-        padding: 20px 12px 40px;
-
-    }
-    .new-task-icon{
-        grid-column-start: 1;
-        justify-content: center;
-    }
-    .cards{
-        margin-bottom: 0;
-        width: 100%;
-        box-shadow: none;
-
-    }
-    .card1{
-        grid-column-start: 1;
-      }
-      
-      .card2{
-          grid-column-start: 1;
-      }
-      
-      .card3{
-          grid-column-start: 1;
-      }
-      
-      .card4{
-          grid-column-start: 1;
-        
-      }
-      
-      .card5{
-          grid-column-start: 1;
-        
-      }
-      .new_task-text{
-        display: none;
-      }
-
-
-      /* PAGE-2  */
-
-      .page_2{
-        width: 100%;
-        margin: 0;
-        left: 0;
-        transform: translate(0, 0);
-      }
-      .page-heading{
-        padding-left: 0;
-      }
-      .page3-icons{
-        width: 100%;
-      }
-      .page3-card{
-        width: 100%;
-      }
-      .font2-text{
-        display: none;
-      }
-      
-      /* page-3 */
-
-      .add-new-task-icon{
-        margin-left: auto;
-        margin-right: auto;
-        transform: translateX(-39px);
-      }
-}
 
