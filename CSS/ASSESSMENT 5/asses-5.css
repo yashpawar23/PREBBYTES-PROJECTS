@@ -11,7 +11,9 @@
 .first-row{
     display: flex;
     gap: 100px 100px;
-    margin-left: 40%;
+    margin-left: 20%;
+  
+    
 }
 
 
@@ -136,23 +138,19 @@
 /* PAGE-2  */
 
 
-/* .second-page{
-    background-color: blueviolet;
-    padding-top: 20px;
-    overflow:auto;
-    height: 100%;
-}
- */
 
 .skew-row-11:hover{
     position:relative;
   animation-name: width-extend;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
-  transition-timing-function:ease ;
-  
+  transition-timing-function:linear;
+  transition-delay: 0.2s;
 }
+
 @keyframes width-extend{
+    
+    
     0%   {
         width:100px; height:100px
       }
@@ -163,24 +161,34 @@
 .skew-row-12:hover{
     position:relative;
   animation-name: width-height-extend;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
+  transition-timing-function:ease-in;
+  
+  
 }
 @keyframes width-height-extend{
-    0%   {
-        width:100px; height:100px
-      }
-        25%  {
-           width:300px; 
-           height: 300px;
+        0%   {
+            width:100px; height:100px
         }
+            25%  {
+            width:300px; 
+            height: 100px;
+            }
+            50%{
+                height: 300px;
+            }
+            75%{
+                width: 100px;
+            }
+        
 }
 .skew-row-13:hover{
     position:relative;
   animation-name: width-extend3;
-  animation-duration: 4s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
-  transition-timing-function:ease-in 
+  transition-timing-function:ease-in-out;
   
 }
 @keyframes width-extend3{
@@ -194,9 +202,9 @@
 .skew-row-14:hover{
     position:relative;
   animation-name: width-extend4;
-  animation-duration: 4s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
-  transition-timing-function:ease-in-out ;
+  transition-timing-function:ease-out;
 }
 @keyframes width-extend4{
     0%   {
@@ -209,9 +217,9 @@
 .skew-row-15:hover{
     position:relative;
   animation-name: width-extend5;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
-  transition-timing-function:ease-out ;
+  transition-timing-function:ease-in-out ;
 }
 @keyframes width-extend5{
     0%   {
