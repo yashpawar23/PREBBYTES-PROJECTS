@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assessment-1/js-asses1.css">
+    <title>JS Assessment-3</title>
+</head>
+<body>
+    <p>Q.1 Find the number of digits</p>
+    <P>ANS</P>
+    <pre>
+        const Find_Digits = (N) => 
+            {var quotient =N; 
+	           var remainder =0; 
+	           var tempNum = N; 
+	           var count =0 ;
+	 
+	           while (quotient >=1){ 
+	       quotient =Math.floor( tempNum / 10); 
+	       tempNum = Math.floor(tempNum/10);
+	       count = count +1; 
+	      }
+	      return count;
+	 
+        };
+    </pre> <hr>
+    <p>Q.2 Find the Fives.</p>
+    <p>ANS</p>
+    <pre>
+        const Find_Five = (N) => 
+{var remainder = N; 
+	 var tempRemainder = 0 ;
+	 
+	 var count = 0; 0
+	 while (remainder > 0){
+	   
+	   tempRemainder = remainder % 10
+	   
+	   
+	   if (tempRemainder === 5){
+	     count = count +1;
+	   }
+	   
+	   remainder= Math.floor(remainder / 10);
+	   
+	 }
+	 return count;
+	 
+};
+
+    </pre><hr>
+    <p>Q.3 Find Sum</p>
+    <p>ANS</p>
+    <pre>
+        const findSum = (n) => {
+            var sum =0
+            for (let v=1; v < = n ; v+=1)
+            {
+                if (v % 2 === 0)
+                  {
+                    sum=sum+v;
+                    
+                  }
+          }
+          return sum;
+        };
+        
+        
+    </pre><hr>
+    <p>Q. 4 Find the sum of the digits of a given number.</p>
+    <p>ANS</p>
+    <pre>
+        const Number_Sum = (N) => 
+      {   
+      
+	      var temp =N;
+	      var sum =0;
+	      var remainder=0
+	    while (temp > 0){
+	     remainder = temp % 10;
+	     temp = Math.floor(temp / 10);
+	     sum =sum +remainder;
+	   }
+	 return sum;
+};
+
+    </pre><hr>
+    <p>Q. 5Print the Odds.</p>
+    <p>ANS</p>
+    <pre>
+        const Print_Odd = (N) =>  {
+	      console.log(2)
+
+	       for (let i = 3 ; i < = N ;i=i+2){
+	   
+	        console.log(i)
+	   
+	    }
+      };
+
+    </pre><hr>
+    <p>Q. 6 Print the Pattern.</p>
+    <p>ANS</p>
+    <pre>
+        const Print_pattern = (N) => {
+           let str=''
+      for (let i =1 ; i<=N ; i=i+1)
+        { 
+      for (let j = 1 ; j <=i ; j =j+1)
+          {
+           str=str+'*';
+                     
+          }
+       console.log(str)
+          str=''
+          }
+         };
+
+    </pre><hr>
+    <p>Q. 7 Check whether a Number is a prime or not.</p>
+    <p>ANS</p>
+    <pre>
+
+    </pre><hr>
+    <p>Q. 8 Print Numbers </p>
+    <p>ANS</p>
+    <pre>
+        const printNumbers = (n) => {
+            for(let i = 1;i<=n;i++){
+            console.log(i);
+            
+          }
+        };
+        
+    </pre><hr>
+    <p>Q. 9 Print the Table</p>
+    <p>ANS</p>
+    <pre>
+        const Print_Table = (N) => {
+  
+            for(let i = 1 ; i < = 10 ; i++){
+              console.log(`${N} * ${i} = ${N*i}`)
+            }
+        };
+        
+        
+    </pre>
+</body>
+</html>
