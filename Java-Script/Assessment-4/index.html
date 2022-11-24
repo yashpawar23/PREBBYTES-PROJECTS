@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assessment-1/js-asses1.css">
+    <title>Document</title>
+</head>
+<body>
+    <p>Q.1 Find the Product.</p>
+    <P>ANS</P>
+    <span>
+        let pro =1;
+        let i=0;
+        while(i < N){
+          pro= pro * array [i] ;
+          i++ ;
+        }
+          return pro;
+        }
+
+    </span><hr>
+    <p>Q.2 Find the Sum.</p>
+    <P>ANS</P>
+    <span>
+        let sum =0;
+              let i=0
+              while(i < N) {
+                sum=sum + array[i];
+                i++;
+              }
+              return sum;
+              }
+    </span><hr>
+    <p>Q.3 Count Occurrences.</p>
+    <P>ANS</P>
+    <span>
+        const findCount = (N, K, Arr) => 
+    {
+        count = 0 ;
+      for (let i =0 ; i < Arr.length ; i++){
+      if (K === Arr[i] )
+        {
+          count = count +1;
+       }
+    }
+          return count;
+    };
+    </span><hr>
+    <p>Q.4 Even Odd.</p>
+    <P>ANS</P>
+    <span>
+               const findEvenOdd = (N, Arr) => 
+       {
+         B =[];
+             evenSum =0 ;
+             oddSum =0 ;
+              
+             for (let i = 0 ; i < Arr.length ; i++){
+             if (Arr[i] % 2 === 0){
+             evenSum += Arr[i]
+             B[0]=evenSum;
+             }
+             else{
+                 oddSum += Arr[i]
+                 B[1]=oddSum;
+               }
+                
+             }
+                return B;  
+     };
+ 
+
+    </span><hr>
+    <p>Q.5 Find whether the number is present or not.</p>
+    <P>ANS</P>
+    <span>
+        const Find_Num = (array,N,M) => 
+        {
+          str=''
+            for (let i =0 ; i< array.length ; i++){
+            if (M === array[i]){
+                          
+                str= "YES"
+                 break;
+              }
+                  else {
+                        str='NO'
+                      }
+                }
+                  return str;
+        };
+         
+         
+    </span><hr>
+    <p>Q.6 Higher Age.</p>
+    <P>ANS</P>
+    <span>
+               const highAge = (N, Arr) => 
+       {
+         higherAge = [];
+           for (let i =0 ; i <Arr.length ; i++){
+            if (Arr[i] >= 18 ){
+           higherAge.push(Arr[i])
+         }
+       }
+                 return higherAge;  
+     };
+ 
+
+    </span><hr>
+    <p>Q.7 Increment the Array Elements.</p>
+    <P>ANS</P>
+    <span>
+        const Inc_Arr = (array,N) => 
+        {
+          for (let  i = 0 ; i < array.length ; i++){
+                        console.log(array[i]+1)
+                      }
+        
+        };
+         
+         
+    </span>
+    <p>Q.8 Pass or Fail.</p>
+    <P>ANS</P>
+    <span>
+        const isAllPass = (N, Arr) => 
+        {str='';
+                for (let i = 0 ; i < Arr.length ; i++){
+                  if (Arr[i] < 32){
+                    str='NO'
+                    break;
+                  }
+                  else{
+                    str='YES'
+                  }
+                }
+                return str;
+    
+      };
+    </span><hr>
+    <p>Q.9 Unique Color Shirt.</p>
+    <P>ANS</P>
+    <span>
+        
+    </span><hr>
+    <p>Q.10 Min and Max.</p>
+    <P>ANS</P>
+    <span>
+        function arrayMin(arr) {
+            min = arr[0];
+                       for (let i = 0 ; i < arr.length ; i++){
+                         if (arr[i] < min ){
+                           min = arr[i];
+                         }
+                       }
+                       return min;
+          
+          }
+          
+          function arrayMax(arr) {
+           
+           max = arr[0];
+                       for (let i = 0 ; i < arr.length ; i++){
+                         if (arr[i] > max ){
+                           max = arr[i];
+                         }
+                       }
+                       return max;
+          }
+          
+          
+    </span><hr>
+    <P>Q.11 Birthday Game</P>
+    <P>ANS</P>
+    <span>
+
+    </span><hr>
+</body>
+</html>
