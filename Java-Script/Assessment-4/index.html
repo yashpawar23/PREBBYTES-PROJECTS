@@ -178,7 +178,27 @@
     <P>Q.11 Birthday Game</P>
     <P>ANS</P>
     <pre>
-
+      function Birthday_Game(arr,D ,M) {
+        let tempArr =[];
+                   let count = 0 ;
+                   
+                   for (let i =0 ; i < arr.length - M+1 ; i++ ){
+                   let sum = 0 ;
+                     for (let j = i ; j < M+i ; j++ ){
+                      
+                       sum = arr[j] + sum ;
+                       
+                     }
+                     
+                     if ( sum === D){
+                       count = count + 1; 
+                     }
+                   }
+                  
+                  return count ;
+       }
+       
+       
     </pre><hr>
 </body>
 </html>
