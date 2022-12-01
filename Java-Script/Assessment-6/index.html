@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assessment-1/js-asses1.css">
+    
+    <title>Document</title>
+    
+    <h1 class="page-heading">JAVA SCRIPT</h1>
+    <h3>ASSESSMENT-5</h3>
+
+    <P>Q.1  Find the Smaller Angle</P>
+    <P>ANS</P>
+    <pre>
+        var Minimal_Angle = (h, m) => 
+            {let hourAngel = ((h * 360)/12) + ((m * 360) / (12 * 60));
+                   let minAngel = (m * 360) / 60;
+                   angel = Math.abs(hourAngel - minAngel);
+                   if (angel > 180){
+                     angel = 360 - angel ;
+                   }
+     
+       return angel;
+};
+ 
+
+    </pre><br><hr>
+
+    <P>Q.2  Check whether the year is Leap year or not.</P>
+    <P>ANS</P>
+    <pre>
+        var Check_Leap = (year) => 
+            {
+              if (year % 100 === 0 )
+                {
+                if (year % 400 === 0 ){
+                 return 'Leap Year';
+                }
+                else {
+                    return 'Non Leap Year';
+                }
+                }
+   
+                else if ( year % 4 === 0 )
+                return 'Leap Year';
+                else 
+                return 'Non Leap Year';
+
+  
+
+            };
+ 
+    </pre><br><hr>
+
+    <P>Q.3  Perfect Number Check.</P>
+    <P>ANS</P>
+    <pre></pre><br><hr>
+
+    <P>Q.4  Reverse a Number.</P>
+    <P>ANS</P>
+    <pre>
+        var Reverse_Number = (N) => 
+        {
+            var temp = N;
+            var quotient = N;
+            var remainder = 0 ;
+            var reversedNumber = 0 ;
+  
+            while (quotient > 0 ){
+          remainder = quotient % 10 ;
+            reversedNumber = ( reversedNumber * 10 ) + remainder;
+            quotient = parseInt(quotient / 10);
+            }
+
+            return reversedNumber;
+
+        };
+ 
+    </pre><br><hr>
+
+    <P>Q.5  Substring Check.</P>
+    <P>ANS</P>
+    <pre>
+                 var Substring_Check = (S1, S2) => 
+         {
+           return S1.includes(S2) ? 'YES' : 'NO'   
+         };
+    </pre><br><hr>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

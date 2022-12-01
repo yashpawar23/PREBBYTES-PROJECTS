@@ -5,20 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Digital Clock</title>
 </head>
 <body>
+    <script>
+        // const timeObj = time()
+        // console.log("inside body" , timeObj)
+    </script>
     
     <div class="main-page-div">
         <div class="flex-div1">
         <div class="clock-symbol-div"> <img src="./images/clock_logo.png" alt="error"> </div>
         <div class="reminder-set-div">
-            <div class="wakeup-time  reminder-img-text"><img src="./images/wake_up.png" alt="Error">Set wake up time</div>
-            <div class="lunch-time  reminder-img-text"><img src="./images/lunch_time.png" alt="Error">Set lunch time</div>
-            <div class="nape-time  reminder-img-text"> <img src="./images/nap_time.png" alt="Error">Set nap time</div>
-            <div class="night time  reminder-img-text"><img src="./images/wake_up.png " alt="Error">Set nap time</div>
+            <div class="wakeup-time  reminder-img-text">
+                <img src="./images/wake_up.png" alt="Error">
+                <p> Set wake up time</p>
+                <div class="multiple_time-div">
+                    <select name="cars" id="multiple_time">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                </div>
+            </div>
+
+            <div class="lunch-time  reminder-img-text">
+                <img src="./images/lunch_time.png" alt="Error">
+                <p> Set lunch time</p>
+            </div>
+
+            <div class="nape-time  reminder-img-text">
+                 <img src="./images/nap_time.png" alt="Error">
+                <p> Set nap time</p>
+            </div>
+
+            <div class="night time  reminder-img-text">
+                <img src="./images/wake_up.png " alt="Error">
+                <p>Set night time</p>
+            </div>
+
         </div>
-        <div class="notification-bar1">GOOD MORNING!! WAKE UP !!</div>
+        <div class="notification-bar1" id="notification_bar"></div>
 
         <div class="alarm-schedul-flex-div">
         <div class="alarm-set-icon">Set Alarm </div>
@@ -33,15 +61,18 @@
         <div class="flex-div2">
          <div class="timer-bar">
             <p>TIME</p>
-            <div class="hour timer-box">00 <p></p></div>
-            <div class="min timer-box">00</div>
-            <div class="sec timer-box">00</div>
-            <div class="AM-PM timer-box">AM</div>
+            <div class="hour timer-box" id="time_hour"> </div>
+            <div class="min timer-box" id="time_min"></div>
+            <div class="sec timer-box" id="time_sec"></div>
+            <div class="AM-PM timer-box" id="time_session"><img  src="./images/AM_svg.svg"></div>
 
          </div>
-         <div class="notification-bar2">GRAB SOME HEALTHY BREAKFAST!!!</div>
-         <div class="imag-bar"><img src="./images/Component 30 – 1.svg" alt="error"></div>
+         <div class="notification-bar2" id="notification_bar_2"></div>
+         <div class="imag-bar"><img  id="notification_img" src="./images/lunch_image.png" alt=""></div>
         </div>
        </div>
+       <script src="./pr-1.js">
+        
+       </script>
 </body>
 </html>

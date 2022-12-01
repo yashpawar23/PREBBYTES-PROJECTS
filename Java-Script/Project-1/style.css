@@ -20,7 +20,7 @@ body{
     border-radius: 10px;
     font-size: 25px;
     color: #3D087B;
-    margin-top: 20px    ;
+    margin-top: 20px;
 
     
 }
@@ -60,6 +60,8 @@ body{
     border-radius: 10px;
     margin-right: 5px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;align-items: center;
 
 
     
@@ -141,4 +143,14 @@ body{
    margin-top: 15px;
     border: 1px solid #EDEDED;
     background-color: #FFFFFF;
+}
+
+.reminder-img-text{
+    display: flex;
+    gap: 22px 24px;
+    margin: 0;
+}
+
+.multiple_time{
+    width: 250px;
 }
