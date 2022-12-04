@@ -34,8 +34,8 @@ body{
 .notification-bar1{
     width: 556px;
     height: 77px;
-    background-color:#3D087BDE;
-    border: 1px solid;
+    background-color:#8A11BF;
+    border: 1px solid #EDEDED;
     border-radius: 10px;
     font-size: 25px;
     padding-top: 10px;
@@ -70,19 +70,24 @@ body{
 .time-schedule-bar{
     width: 253px;
     height: 117px;
-    background-color:#3D087BDE;
-    border: 1px solid;
+    background-color:#8A11BF;
+    border: 1px solid #EDEDED;
+
     flood-color: #B85EBF;
-    font-size: 15px;
+    font-size: 18px;
     color: #F25CFE;
     padding: 5px;
     text-align: center;
     border-radius: 10px;
     box-sizing: border-box;
-    margin-top: 20px;
 
 
 }
+.time_schedul{
+    margin: 0;
+    align-items: center;
+}
+
 
 .alarm-schedul-flex-div{
     display: flex;
@@ -135,13 +140,19 @@ body{
     
 }
 
+#notification_img{
+    width: 536px;
+    height: 340px;
+    border-radius: 10px;
+}
+
 .imag-bar{
     width: 536px;
     height: 341px;
     border-radius: 10px;
    margin-left: 20px;
    margin-top: 15px;
-    border: 1px solid #EDEDED;
+    border: 0px solid #EDEDED;
     background-color: #FFFFFF;
 }
 
@@ -149,8 +160,15 @@ body{
     display: flex;
     gap: 22px 24px;
     margin: 0;
+    justify-content: space-around;
 }
 
-.multiple_time{
+
+
+select{
     width: 250px;
+    height: 35px;
+    border: 2px solid #EDEDED;
+    border-radius: 5px;
+    background-color:#FFFFFF;
 }
