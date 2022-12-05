@@ -31,6 +31,13 @@ body{
 
     
 }
+
+/* .row_betn_logo{
+    width: 0px;
+    height: 40px;
+    border: 1px solid black;
+
+} */
 .notification-bar1{
     width: 556px;
     height: 77px;
@@ -86,6 +93,9 @@ body{
 .time_schedul{
     margin: 0;
     align-items: center;
+}
+.time_schedul_wakeup{
+    font-size: 10PX;
 }
 
 
@@ -172,3 +182,24 @@ select{
     border-radius: 5px;
     background-color:#FFFFFF;
 }
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    body{
+        background-color: rgb(226, 93, 93);
+    }
+    .main-page-div{
+        
+        display:block;
+        justify-content: center;
+        align-items: center;
+    }
+    .notification-bar1{
+         border-color: #CB52F8;
+    }
+    .time-schedule-bar{
+        margin-bottom: 30px;
+    }
+    
+    
+    
+  }

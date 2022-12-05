@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+
     <title>Digital Clock</title>
 </head>
 <body>
-    <script>
-        // const timeObj = time()
-        // console.log("inside body" , timeObj)
-    </script>
+    
     
     <div class="main-page-div">
         <div class="flex-div1">
@@ -44,6 +42,8 @@
                       </select>
                 </div>
             </div>
+            <div class="row_betn_logo"></div>
+
 
             <div class="lunch-time  reminder-img-text">
                 <img src="./images/lunch_time.png" alt="Error" width="50px">
@@ -72,6 +72,8 @@
                       </select>
                 </div>
             </div>
+            <div class="row_betn_logo"></div>
+
 
             <div class="nape-time  reminder-img-text">
                  <img src="./images/nap_time.png"  walt="Error" width="50px">
@@ -100,7 +102,8 @@
                       </select>
                 </div>
             </div>
-
+            <div class="row_betn_logo"></div>
+                   
             <div class="night time  reminder-img-text">
                 <img src="./images/wake_up.png " alt="Error" width="50px">
                 <p>Set night time</p>
@@ -133,12 +136,14 @@
         <div class="notification-bar1" id="notification_bar"></div>
 
         <div class="alarm-schedul-flex-div">
-        <div class="alarm-set-icon">Set Alarm </div>
+            
+            <button class="alarm-set-icon" onclick="myFunction()">Set Alarm</button>
+        
         <div class="time-schedule-bar">
-           <p class="time_schedul">Wake Up Time : 10AM - 11AM</p>  
-            <p class="time_schedul">Lunch Time : 12PM - 1PM </p>
-            <p class="time_schedul"> Nap Time : 4PM - 5PM </p>
-            <p class="time_schedul"> Night Time : 8PM-9AM</p>                           
+           <p id="time_schedul_wakeup "></p>  
+            <p id="time_schedul_lunch"></p>
+            <p id="time_schedul_nape"> </p>
+            <p id="time_schedul_night"> </p>                           
                                         
         </div>
 
@@ -158,8 +163,8 @@
          <div class="imag-bar"><img  id="notification_img" src="" alt=""></div>
         </div>
        </div>
-       <script src="./pr-1.js">
         
-       </script>
+    <script  type="text/javascript" src="./pr-1.js"></script>
+      
 </body>
 </html>

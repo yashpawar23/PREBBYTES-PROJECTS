@@ -56,7 +56,28 @@
 
     <P>Q.3  Perfect Number Check.</P>
     <P>ANS</P>
-    <pre></pre><br><hr>
+    <pre>
+      var Perfect_Check = (N) => 
+      {
+            
+       var sum = 0 ;  
+            if (N === 1)
+              return 'YES';
+            else {
+              for ( let  i = 1 ; i <= parseInt( N / 2 ) ; i++){
+                if ( N % i === 0){
+                  sum = sum + i;
+                }
+              }
+              if (sum === N ){
+                return 'YES'
+              }
+              else 
+               return 'NO'
+            }
+      };
+       
+    </pre><br><hr>
 
     <P>Q.4  Reverse a Number.</P>
     <P>ANS</P>

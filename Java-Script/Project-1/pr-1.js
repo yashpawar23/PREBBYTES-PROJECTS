@@ -30,6 +30,8 @@ function time() {
     document.getElementById('notification_bar_2').innerText = "CLOSE YOUR EYES AND GO TO SLEEP";
   }
 
+  
+
 
   const wakeUpAlarmTime = document.getElementById('set_alarm_time_wake_up').value;
   const SetLunchTime = document.getElementById('set_alarm_time_lunch').value;
@@ -40,11 +42,8 @@ function time() {
 0
   
   if ((hrs >= parseInt(wakeUpAlarmTime)) && (hrs <= (parseInt(wakeUpAlarmTime) + 1))) {
-    console.log("inside   wakeup iffff")
-
     document.getElementById('notification_img').src = "./images/Component 30 – 1.svg";
   } else if ((hrs >= parseInt(SetLunchTime)) && (hrs <= (parseInt(SetLunchTime) + 1))) {
-    console.log("inside ifffffffff")
     document.getElementById('notification_img').src = "./images/Component 31 – 1.svg";
     
   } else if ((hrs >= parseInt(SetNapeTime)) && (hrs <= (parseInt(SetNapeTime) + 1))) {
@@ -53,7 +52,7 @@ function time() {
     document.getElementById('notification_img').src = "./images/good night.svg";
   }
     else {
-     document.getElementById('notification_img').src = "https://images.unsplash.com/photo-1438129749798-ea5ca739b4cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Zmxvd2VycyUyMG5hdHVyZXxlbnwwfHwwfHw%3D&w=1000&q=80"; // default image
+     document.getElementById('notification_img').src = "https://thumbs.dreamstime.com/z/wooden-closed-sign-alarm-clock-space-copy-white-brick-wall-background-176633044.jpg"; // default image
    }
 
 
@@ -76,7 +75,57 @@ function time() {
 
 };
 
+
 time();
+
+
+
+function myFunction(){
+
+  const setalarmwatch = document.getElementById("set_alarm_time_wake_up").value
+  const wakeupAlarmtime = setalarmwatch % 12 ;
+  const wakeAlarmSession = "AM" 
+  
+  if(setalarmwatch>12){
+    wakeAlarmSession  = "PM"
+  }
+  
+  document.getElementById('time_schedul_wakeup').innerText =
+  `Wake Up Time : ${wakeupAlarmtime} ${wakeAlarmSession} - ${wakeupAlarmtime + 1} ${wakeAlarmSession}`
+
+  const setAlarmLunch = document.getElementById('set_alarm_time_lunch').value;
+  const wakeUpAlarmLunch =  setAlarmLunch % 12;
+  const wakeAlarmSessionLunch = "AM" 
+
+  if(setAlarmLunch>12){
+    wakeAlarmSessionLunch  = "PM"
+  }
+
+  document.getElementById("time_schedul_lunch").innerText =
+  `Lunch Time : ${wakeUpAlarmLunch} ${wakeAlarmSessionLunch} - ${wakeUpAlarmLunch + 1} ${wakeAlarmSessionLunch}`
+
+
+  const setAlarmNape = document.getElementById("set_alarm_time_nape").value;
+  const wakeUpAlarmNape = setAlarmNape % 12;
+  const wakeAlarmSessionNape = "AM"
+
+  Document.getElementById("time_schedul_nape").innerText = 
+  `Nape TIme : ${wakeUpAlarmNape} ${wakeAlarmSessionNape} - ${wakeUpAlarmNape}+ 1}  ${wakeAlarmSessionNape} `
+
+
+  const setAlarmNight = document.getElementById("set_alarm_time_night").value;
+  const wakeUpAlarmNight = setAlarmNight % 12;
+  const  wakeUpAlarmSessionNight = "AM"
+
+
+  if(setAlarmNight>12){
+    wakeUpAlarmSessionNight  = "PM"
+  }
+
+  document.getElementById("time_schedul_night").innerText = 
+  `Night Time : ${wakeUpAlarmNight} ${wakeUpAlarmSessionNight} - ${wakeUpAlarmNight + 1} ${wakeUpAlarmSessionNight}`
+
+}
 
 
 
