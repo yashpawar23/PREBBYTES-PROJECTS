@@ -82,7 +82,7 @@ time();
 
 function myFunction(){
 
-  const setalarmwatch = document.getElementById("set_alarm_time_wake_up").value
+  const setalarmwatch = document.getElementById("set_alarm_time_wake_up").value;
   const wakeupAlarmtime = setalarmwatch % 12 ;
   const wakeAlarmSession = "AM" 
   
@@ -90,40 +90,56 @@ function myFunction(){
     wakeAlarmSession  = "PM"
   }
   
-  document.getElementById('time_schedul_wakeup').innerText =
+  document.getElementById("time_schedul_wakeup").innerText =
   `Wake Up Time : ${wakeupAlarmtime} ${wakeAlarmSession} - ${wakeupAlarmtime + 1} ${wakeAlarmSession}`
 
-  const setAlarmLunch = document.getElementById('set_alarm_time_lunch').value;
-  const wakeUpAlarmLunch =  setAlarmLunch % 12;
-  const wakeAlarmSessionLunch = "AM" 
+//////////////////////////////////////////////
+
+
+
+  const setAlarmLunch = document.getElementById("set_alarm_time_lunch").value;
+  const AlarmLunch =  setAlarmLunch % 12;
+  const AlarmSessionLunch = "AM" 
 
   if(setAlarmLunch>12){
-    wakeAlarmSessionLunch  = "PM"
+    AlarmSessionLunch  = "PM"
   }
 
   document.getElementById("time_schedul_lunch").innerText =
-  `Lunch Time : ${wakeUpAlarmLunch} ${wakeAlarmSessionLunch} - ${wakeUpAlarmLunch + 1} ${wakeAlarmSessionLunch}`
+  `Lunch Time : ${AlarmLunch} ${AlarmSessionLunch} - ${AlarmLunch + 1} ${AlarmSessionLunch}`
+
+
+
+  ///////////////////////////////////
 
 
   const setAlarmNape = document.getElementById("set_alarm_time_nape").value;
-  const wakeUpAlarmNape = setAlarmNape % 12;
-  const wakeAlarmSessionNape = "AM"
+  const AlarmNape = setAlarmNape % 12;
+  const AlarmSessionNape = "AM"
 
-  Document.getElementById("time_schedul_nape").innerText = 
-  `Nape TIme : ${wakeUpAlarmNape} ${wakeAlarmSessionNape} - ${wakeUpAlarmNape}+ 1}  ${wakeAlarmSessionNape} `
+  if(setAlarmNape>12){
+    AlarmSessionNape  = "PM"
+  }
+
+
+  document.getElementById("time_schedul_nape").innerText = 
+  `Nape TIme : ${AlarmNape} ${AlarmSessionNape} - ${AlarmNape}+ 1}  ${AlarmSessionNape} `
+
+
+  //////////////////////////////
 
 
   const setAlarmNight = document.getElementById("set_alarm_time_night").value;
-  const wakeUpAlarmNight = setAlarmNight % 12;
-  const  wakeUpAlarmSessionNight = "AM"
+  const AlarmNight = setAlarmNight % 12;
+  const  AlarmSessionNight = "AM"
 
 
-  if(setAlarmNight>12){
-    wakeUpAlarmSessionNight  = "PM"
+  if(AlarmNight>12){
+    AlarmSessionNight  = "PM"
   }
 
   document.getElementById("time_schedul_night").innerText = 
-  `Night Time : ${wakeUpAlarmNight} ${wakeUpAlarmSessionNight} - ${wakeUpAlarmNight + 1} ${wakeUpAlarmSessionNight}`
+  `Night Time : ${AlarmNight} ${AlarmSessionNight} - ${AlarmNight + 1} ${AlarmSessionNight}`
 
 }
 

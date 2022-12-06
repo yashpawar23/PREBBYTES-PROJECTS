@@ -76,7 +76,7 @@ body{
 }
 .time-schedule-bar{
     width: 253px;
-    height: 117px;
+    height: 259px;
     background-color:#8A11BF;
     border: 1px solid #EDEDED;
 
@@ -90,10 +90,7 @@ body{
 
 
 }
-.time_schedul{
-    margin: 0;
-    align-items: center;
-}
+
 .time_schedul_wakeup{
     font-size: 10PX;
 }
