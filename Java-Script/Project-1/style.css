@@ -184,22 +184,36 @@ select{
 }
 
 @media screen and (min-width: 320px) and (max-width:480px) {
-    body{
-        background-color: rgb(226, 93, 93);
-    }
+    
     .main-page-div{
         
         display:block;
-        justify-content: center;
-        align-items: center;
+       
     }
-    .notification-bar1{
-         border-color: #CB52F8;
-    }
+   
     .time-schedule-bar{
         margin-bottom: 30px;
     }
     
+    .timer-bar{
+        position: relative;
+        top: 50%;
+    }
     
     
   }
+@media screen and (min-width: 481px) and (max-width:1000px) {
+   
+    .main-page-div{
+        display:block;
+    }
+    .time-schedule-bar{
+        margin-bottom: 30px;
+    }
+    .clock-symbol-div{
+        margin: 0;
+        display: block;
+    }
+   
+   
+}

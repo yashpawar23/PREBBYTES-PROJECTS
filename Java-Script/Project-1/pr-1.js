@@ -39,7 +39,7 @@ function time() {
   const SetNightTime = document.getElementById('set_alarm_time_night').value;
 
 
-0
+
   
   if ((hrs >= parseInt(wakeUpAlarmTime)) && (hrs <= (parseInt(wakeUpAlarmTime) + 1))) {
     document.getElementById('notification_img').src = "./images/Component 30 – 1.svg";
@@ -86,12 +86,13 @@ function myFunction(){
   const wakeupAlarmtime = setalarmwatch % 12 ;
   const wakeAlarmSession = "AM" 
   
-  if(setalarmwatch>12){
+  if(setalarmwatch > 12){
     wakeAlarmSession  = "PM"
   }
   
   document.getElementById("time_schedul_wakeup").innerText =
   `Wake Up Time : ${wakeupAlarmtime} ${wakeAlarmSession} - ${wakeupAlarmtime + 1} ${wakeAlarmSession} `
+
 
 
   const setAlarmLunch = document.getElementById("set_alarm_time_lunch").value;
@@ -121,9 +122,11 @@ function myFunction(){
   document.getElementById("time_schedul_nape").innerText = 
   `Nape TIme : ${AlarmNape} ${AlarmSessionNape} - ${AlarmNape+ 1}  ${AlarmSessionNape} `
 
+  
+
 
   const setAlarmNight = document.getElementById("set_alarm_time_night").value;
-  const AlarmNight = setAlarmNape % 12;
+  const AlarmNight = setAlarmNight   % 12;
   const AlarmSessionNight = "AM"
 
   if(setAlarmNight>12){
