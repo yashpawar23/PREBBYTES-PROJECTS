@@ -7,6 +7,125 @@
     <title>Document</title>
 </head>
 <body>
-    <script></script>
+    <h1 class="page-heading">JAVA SCRIPT</h1>
+    <h3>ASSESSMENT-1</h3>
+    <h3> Promise Async Await</h3>
+
+    <P>Q.1 Write one example explaining how you can write a callback function ?.<br>ANS</P>
+    <pre>
+        function callback (X,Y,add){
+            console.log(X);
+            add(5,6)
+            console.log(Y)
+        
+        }
+        
+        function add(a,b){
+            console.log(`sum of ${a + b}`)
+        }
+        
+        callback(5,6,add)
+    </pre><br>
+    <hr><br>
+    <P>Quetion -2.<br>ANS</P>
+    <pre>
+        const calculater = (num1, num2, callback) => {
+            const result = callback(num1, num2)
+            console.log(result)
+        }
+        
+        const myCallback = (a, b) => {
+            return a * b
+        }
+        
+        calculater( 100, 3, myCallback )
+    
+    setTimeout(() => {
+        console.log(1)
+        setTimeout(() => {
+            console.log(2);
+            setTimeout(() => {
+                console.log(3);
+                setTimeout(() =>{
+                    console.log(4);
+                },1000)
+            },1000)
+        },1000)
+    },1000)
+        
+    </pre><br>
+    <hr><br>
+    
+    <P>Q.3 Quetion-3.<br>ANS</P>
+    <pre>
+        const AddTwoNumbers = (a,b) => {
+            return a + b
+            
+        };
+        
+    </pre><br>
+    <hr><br>
+    
+    <P>Q.4 Write one example explaining how you can write a callback function ?.<br>ANS</P>
+    <pre>
+        const AddTwoNumbers = (a,b) => {
+            return a + b
+            
+        };
+        
+    </pre><br>
+    <hr><br>
+    
+    <P>Q.5 Write one example explaining how you can write a callback function ?.<br>ANS</P>
+    <pre>
+        const AddTwoNumbers = (a,b) => {
+            return a + b
+            
+        };
+        
+    </pre><br>
+    <hr><br>
+    
+    <P>Q.6 Write one example explaining how you can write a callback function ?.<br>ANS</P>
+    <pre>
+        const AddTwoNumbers = (a,b) => {
+            return a + b
+            
+        };
+        
+    </pre><br>
+    <hr><br>
+    
+    <P>Q.7 Write one example explaining how you can write a callback function ?.<br>ANS</P>
+    <pre>
+        const AddTwoNumbers = (a,b) => {
+            return a + b
+            
+        };
+        
+    </pre><br>
+    <hr><br>
+    
+    <P>Q.8 Write one example explaining how you can write a callback function ?.<br>ANS</P>
+    <pre>
+        const AddTwoNumbers = (a,b) => {
+            return a + b
+            
+        };
+        
+    </pre><br>
+    <hr><br>
+    
+    <P>Q.9 Write one example explaining how you can write a callback function ?.<br>ANS</P>
+    <pre>
+        const AddTwoNumbers = (a,b) => {
+            return a + b
+            
+        };
+        
+    </pre><br>
+    <hr><br>
+    
+    <script src="./Assess11.js"></script>
 </body>
 </html>
