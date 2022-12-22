@@ -2,24 +2,23 @@ body{
     background-color: black;
 }
 
-.page-heading{
-    color: black;
+h1{
     background-color:rgb(211, 140, 140);
-
     text-align: center;
 }
 h3{
-    color:black;
     background-color: rgb(169, 197, 197);
-
     text-align: center;
+
 }
 
-P{
-    color:white;
+#show_hidden_text{
+    font-size: 40px;
+    color: white;
+    font-weight:bold;
 }
 
-pre{
-    color: dodgerblue;
-    font-size:15px
+.button{
+    width: 100px;
+    padding: 30px;
 }
