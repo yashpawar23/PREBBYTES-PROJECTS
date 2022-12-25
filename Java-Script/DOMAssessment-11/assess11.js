@@ -2,7 +2,7 @@
 
 // Quetion - 1
 
-document.getElementById("text").innerHTML ="TEXT"
+document.getElementById("text").innerText ="TEXT"
 
 // Quetion - 2
 
@@ -69,4 +69,22 @@ function time() {
 }
 
 time()
+
+// function time(){
+//   let date = new Date();
+//   let hours = date.getHours();
+//   let mins = date.getMinutes();
+//   let secs = date.getSeconds();
+
+//   if( hours > 12 ){
+//       hours = hours - 12 ;
+//   }
+
+//   document.getElementById('hr').innerText = hours + " : ";
+//   document.getElementById('min').innerText = mins + " : ";
+//   document.getElementById('sec').innerText = secs ;
+
+// }
+
+// setInterval(time, 1000);
 

@@ -95,5 +95,58 @@ let x = function(condition){
 
 x('yes').then(response => console.log(response)).catch(err=>console.log(err))
 
+// Quetion-5
+
+function callback (X,Y,add){
+    console.log(X);
+    add(5,6)
+    console.log(Y)
+
+}
+
+function add(a,b){
+    console.log(`sum of ${a + b}`)
+}
+
+callback(5,6,add)   
+
+// Quetion-6
+
+function CallBackDemo() {
+    CallBackDemo1()
+    function CallBackDemo1() {
+        CallBackDemo2()
+        function CallBackDemo2() {
+            CallBackDemo3()
+            function CallBackDemo3() {
+                CallBackDemo4()
+                function CallBackDemo4() {
+                    console.log("Callback Functon");
+                }
+            }
+        }
+    }
+}
+CallBackDemo()
+
+// Quetion-7
+
+let message = (num) => {
+    return new Promise((res, rej) => {
+        if(num){
+            res(num())
+        }
+        else{
+            rej(console.log("No Data"))
+        }
+
+    })
+}
+
+message(()=>console.log("Message is printed"))
+.then(()=>{
+    prntdata(()=>console.log("Promise Functon"))
+})
+.catch(()=>console.log("No Data available"))
 
    
