@@ -1,0 +1,145 @@
+body{
+    background-color:#F7F7F7;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid  white;
+    background-color: #FBF3E4;
+    width: 100%;
+    height: 60px;
+}
+
+.header-heading {
+    margin-left: 50px;
+    color: #105652;
+}
+
+.heading-options {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-right: 100px;
+    font-size: 17px;
+}
+h2{
+    color: #105652;
+}
+
+.main-content-1 {
+    /* width: 100%; */
+    height: 310px;
+    border: 1px solid white;
+    /* background-color: rgb(26, 44, 26); */
+    display: flex;
+    justify-content:space-between;
+}
+
+#intro_name {
+    color: #FCA738;
+    font-size: 40px;
+    margin: 0;
+}
+
+#education {
+    font-size: 40px;
+    margin: 0;
+    color: black    ;
+}
+#text{
+    color: black;
+}
+
+
+.main_content1-1ndchild {
+    margin-top: 50px;
+    margin-left: 150px;
+
+}
+
+.main_content-2ndchild {
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.hire_me_btn {
+    width: 150px;
+    padding: 7px;
+    border-color: #09BEAD;
+    border-radius: 10px;
+    background-color: #09BEAD;
+    box-shadow: 2px 2px 10px #0BBEAD69;
+}
+
+.get_resume_btn {
+    width: 150px;
+    padding: 7px;
+    border-color: #FCA738;
+    border-radius: 10px;
+    background-color: #FCA738;
+    box-shadow: 2px 2px 10px #F57F1769;
+}
+
+#text {
+    color: white;
+}
+
+.men-img{
+    margin-right: 150px;
+}
+.main-content-2{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px grey;
+    margin-top: 35px;
+}
+.men-img-1{
+    /* width: 300px; */
+    height: 400px;
+}
+.language-known-div{
+    width: 65%;
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px grey;
+}
+.language-known-div-heading{
+    padding-left: 20px;
+}
+.horizantal-line-under-text{
+    width: 100px;
+    height: 5px;
+    color:#FCA738;
+}
+
+.contact-me-main-div{
+ display: flex;
+ justify-content: center;
+}
+
+.contact-me-div1{
+    border: 1px solid white;
+    width: 30%;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    
+}
+.contact-me-div2{
+   background-color: #FBF3E4 ;
+   border: 1px white;
+   width: 30%;
+   height: 400px;
+   border-radius: 15px;
+
+}
+.contact-me-div2-inner-div{
+    align-items: center;
+}

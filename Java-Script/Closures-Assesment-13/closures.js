@@ -64,3 +64,13 @@ var globalVar = "xyz";
                 
                 })(456);
             })(123);
+
+
+
+for(let r=1;r<=n;r++){
+    let s="";
+for(let c=1;c<=r;c++){
+    s=s+"*";
+}
+console.log(s)
+}

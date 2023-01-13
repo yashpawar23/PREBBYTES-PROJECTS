@@ -60,7 +60,7 @@ function markActCompleted(i,j) {
 function getTaskListView() {
     let taskListHtmlStr = "";
     for (let i = 0; i < taskList.length; i++) {
-        taskListHtmlStr += `<div class="card" id="card${i}"><p class="card-heading">${taskList[i].heading}</p><hr>`;
+        taskListHtmlStr += `<div class="card" id="card${i}"><p class="card-heading" onclick="singleCard()">${taskList[i].heading}</p><hr>`;
         taskListHtmlStr += (`${taskList[i].activityList.length > 0 ? `<div class="activity-list-div">` : ``}`)
 
         for (let j = 0; j < taskList[i].activityList.length; j++) {
@@ -86,6 +86,10 @@ function getTaskListView() {
 
 
 getTaskListView()
+
+function singleCard(){
+    taskListHtmlStr += ``
+}
 
 
 
