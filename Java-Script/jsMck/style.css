@@ -1,0 +1,10 @@
+.box{
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    background-color: rgb(203, 183, 222);
+}
+#parent-div{
+    display: flex;
+}

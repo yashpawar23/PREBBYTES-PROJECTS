@@ -1,7 +1,7 @@
 
 
 function addtask() {
-    document.getElementById("Add_new_list_div").style.display = 'block';
+    document.getElementById("Add_new_list_div").style.display = 'block';    
     document.getElementById('first_page_div').style.filter = 'blur(5px)';
 
 }
